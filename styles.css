@@ -56,8 +56,6 @@ html {
 
 .button:hover {
     cursor: pointer;
-    background-color: #2568db;
-    box-shadow: 2px 2px grey;
 }
 
 
