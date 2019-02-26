@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <title>Math Attack</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="state-container" v-if="state === 'Start'">
+        <div class="state button" @click="startGame">
+          <p>
+            Start
+          </p>
+        </div>
+      </div>
+      <div class="" v-else-if="state === 'Play'">
+        <svg class="circle"
+        style="transform: rotate(-0.25turn); z-index: 100;"
+        viewBox="-1 -1 2 2">
+        <path style="zIndex:5;" fill="#61C0BF" v-bind:d="path" />
+        <line
+          x1="0"
+          y1="1"
+          x2="0"
+          y2="-1"
+          style="stroke:#346665; stroke-width: 0.02; z-index:6;"
+        />
+        <line
+          x1="-1"
+          y1="0"
+          x2="1"
+          y2="0"
+          style="stroke:#346665; stroke-width: 0.02; z-index: 6;"
+        />
+      </svg>
+      </div>
+      <div class="state-container" v-else>
+        <div class="state button" @click="backToStart">
+          <p>
+            Go Back to Start
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+    <script src="/script.js"></script>
+    <footer class="dark">
+      <div>
+        See code on <a href="https://github.com/BYU-CS-260-Winter-2019/lab-3-a1994lex">Github</a></a>
+      </div>
+    </footer>
+  </body>
+</html>

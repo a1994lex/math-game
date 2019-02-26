@@ -1,0 +1,91 @@
+body {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 16px;
+    margin: 0;
+    background: #f3f3f3;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#app {
+  overflow: auto;
+  flex: 1;
+}
+
+.circle {
+  max-height: 560px;
+  width: auto;
+}
+
+.state-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button.state {
+  font-size: 2rem;
+}
+
+.button {
+  background: #3498db;
+  min-width: 180px;
+  padding: 4px 8px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 5px;
+}
+
+.button p {
+    font-family: 'Roboto';
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+    user-select: none;
+  }
+
+.button:hover {
+    cursor: pointer;
+    background-color: #2568db;
+    box-shadow: 2px 2px grey;
+}
+
+
+footer {
+    /* height: 40px; */
+    width: 100%;
+    background-color: rgba(255, 255, 255);
+    z-index: 100;
+    color: rgba(17, 17, 17);
+    text-align: center;
+    font-weight: bold;
+}
+
+footer.dark {
+  background-color: rgb(17, 17, 17);
+  color: rgb(255, 255, 255);
+}
+
+footer div {
+  margin: 16px;
+}
+
+footer a {
+  text-decoration: none !important;
+  color: grey;
+  font-style: italic;
+}
+
+footer a:hover {
+    opacity: .4;
+}
