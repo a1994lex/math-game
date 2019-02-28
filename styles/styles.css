@@ -1,6 +1,7 @@
 body {
     /* font-family: 'Montserrat', sans-serif; */
-    font-size: 16px;
+    font-family: 'Roboto';
+    font-size: 1.2rem;
     margin: 0;
     background: #f3f3f3;
     display: flex;
@@ -19,16 +20,69 @@ html {
   flex: 1;
 }
 
+#toast {
+  position: absolute;
+  z-index: 50;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255,255,255,.5);
+  border: 2px solid white;
+  border-radius: 4px;
+  color: green;
+  font-family: 'Lobster', cursive;
+  font-size: 4rem;
+  padding: 16px;
+}
+
+.rounds {
+  padding: 16px;
+  font-size: 2rem;
+}
+
 .circle {
-  max-height: 560px;
+  height: 560px;
   width: auto;
+}
+.circle .green {
+  fill:#61C0BF;
+}
+
+.error {
+  color: red;
+  fill: red;
+}
+
+.question {
+  font-size: 3rem;
+  text-align: center;
+}
+.question input {
+  font-size: 3rem !important;
+  width: 9rem;
+}
+
+.fill-flex-column {
+  height: 100%;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .state-container {
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.tagline {
+  font-family: 'Lobster', cursive;
+  color: black;
+  font-size: 3rem;
 }
 
 .button.state {
@@ -39,15 +93,10 @@ html {
   background: #3498db;
   min-width: 180px;
   padding: 4px 8px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
   border-radius: 5px;
 }
 
 .button p {
-    font-family: 'Roboto';
     text-align: center;
     text-transform: uppercase;
     color: #FFF;
